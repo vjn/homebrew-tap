@@ -1,8 +1,8 @@
 class I386ElfBinutils < Formula
   desc "FSF/GNU ld, ar, readelf, etc. for i386-elf development"
   homepage "https://gcc.gnu.org/"
-  url "https://ftp.gnu.org/gnu/binutils/binutils-2.29.tar.gz"
-  sha256 "172e8c89472cf52712fd23a9f14e9bca6182727fb45b0f8f482652a83d5a11b4"
+  url "https://ftp.gnu.org/gnu/binutils/binutils-2.29.tar.xz"
+  sha256 "0b871e271c4c620444f8264f72143b4d224aa305306d85dd77ab8dce785b1e85"
 
   def install
     system "./configure", "--target=i386-elf",

@@ -18,6 +18,8 @@ class I386ElfGcc < Formula
     system "./configure", "--target=i386-elf",
                           "--program-prefix=i386-elf-",
                           "--enable-languages=c,c++",
+                          "--with-as=#{HOMEBREW_PREFIX}/bin/i386-elf-as",
+                          "--with-ld=#{HOMEBREW_PREFIX}/bin/i386-elf-ld",
                           "--prefix=#{prefix}"
 
     system "make", "all-gcc"
